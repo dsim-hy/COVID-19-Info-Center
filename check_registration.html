@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="home_files/bootstrap.css">
     <link rel="stylesheet" href="home_files/app.css">
 
-    <title>Home | COVID-19 Info Center</title>
+    <title>Check Registration</title>
     <meta name="description" content="">
     <meta name="keywords" content="">
 </head>
@@ -37,7 +37,7 @@
                 <ul class="nav navbar-nav nav-justified w-100">
 
                     <li class="nav-item" id="menu_home">
-                        <a class="nav-link active" href="home.html">Home</a>
+                        <a class="nav-link" href="home.html">Home</a>
                     </li>
 
                     <li class="nav-item" id="menu1">
@@ -53,7 +53,7 @@
                     </li>
 					
 					<li class="nav-item" id="menu4">
-                        <a class="nav-link" href="check_registration.html">Check Registration</a>
+                        <a class="nav-link active" href="check_registration.html">Check Registration</a>
                     </li>
                 </ul>
             </nav>
@@ -74,7 +74,7 @@
 
                     <div class="row">
                         <br>
-                        <h2 id="content" class="open d-lg-block">COVID-19 Updates</h2>
+                        <h2 id="content" class="open d-lg-block">Check Registration</h2>
                         <br>
                         <br>
                         <br>
@@ -96,13 +96,14 @@
                                                 </div>
                                             </div>
                                             <div class="col">
-                                                <h3 class="card-title h3 mb-3 text-left">What is COVID-19?</h3>
-                                                <img src="images/Corona Virus.gif">
-                                                <br>
-                                                <br>
-                                                <p>At the end of 2019, scientists identified a coronavirus outbreak in China. Experts named the newly identified virus severe acute respiratory syndrome coronavirus 2 (SARS-CoV-2) and the illness that it causes coronavirus disease 19 (COVID-19).</p>
-                                                <p>Coronaviruses cause a range of illnesses, including COVID-19. They typically affect the respiratory tract, but their effects can extend well beyond the respiratory system.</p>
-
+                                                <h3 class="card-title h3 mb-3 text-left">Please enter your IC to check</h3>
+                                                <form action="reg_check.php" method="post">
+												<h3>
+													NRIC:
+													<input type="text" name="input_nric"></input>
+												</h3>
+												<button type="submit">Check</button>
+											</form> 
                                             </div>
                                             <div class="pl-md-0 col-md-3 d-none d-md-block">
                                                 <div class="text-center">
@@ -128,84 +129,11 @@
                                 <div class="color-bar cyan half">
                                     <div></div>
                                     <div></div>
-                                    <div></div>
-                                </div>
-                                <div class="card border-0 rounded-0 mb-3">
-                                    <div class="card-body ">
-                                        <h2 class="card-title h3 mb-3 text-left">Symptoms & Preventions</h2>
-                                        <img src="images/Spreading.gif">
-                                        <br>
-                                        <br>
-                                        <p class="size">Symptoms</p>
-
-                                        <ul>
-                                            <li>Fever</li>
-                                            <li>Dry Cough</li>
-                                            <li>Tiredness</li>
-                                            <li>Difficulty breathing or shortness of breath</li>
-                                            <li>Chest pain or pressure</li>
-                                            <li>A rash on skin, or discolouration of fingers or toes</li>
-                                        </ul>
-
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="row ">
-                            <div class="col-md-12">
-                                <div class="card border-0 rounded-0">
-                                    <div class="card-body bg-quaternary">
-                                        <h2 class="card-title h3 mb-3 text-left">Preventions</h2>
-                                        <img src="images/Prevention.gif">
-                                        <br>
-                                        <br>
-                                        <ul>
-                                            <li>Wear a mask</li>
-                                            <li>Stay 6 feet away from others</li>
-                                            <li>Get Vaccinated</li>
-                                            <li>Avoid crowds and poorly ventilated spaces</li>
-                                            <li>Wash your hands often</li>
-                                            <li>Cover coughs and sneezes</li>
-                                        </ul>
-
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
                     </div>
                 </div>
             </div>
             <br>
             <br>
-            <h4>Worldwide Death Toll</h4>
-            <img src="images/Death.gif">
-            <br>
-            <br>
-            <ul>
-                <li>Cases :</li><p>139M</p>
-                <li>Recovered :</li><p>79.2M</p>
-                <li>Deaths :</li><p>2.99M</p>
-
-
-                <p class="small">last updated 3 hours ago</p>
-            </ul>
-
-
-          <br>
-
-
-          <h5 class="edit">How to recover yourself from COVID-19</h5>
-          <p>Follow the steps, shown in the video below.</p>
-          <br>
-
-              <video width="400" controls>
-              <source src="images/Recovery.mp4" type="video/mp4">
-              </video>
-              <br>
-              <br>
-              <br>
-
-
         </main>
 
     </div>
